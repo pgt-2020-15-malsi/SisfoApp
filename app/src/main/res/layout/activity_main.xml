@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/si"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Nim Anda :"
+        android:layout_marginLeft="70dp"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_below="@+id/editNim"
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Password Anda :"
+        android:layout_marginLeft="70dp"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+
+    <EditText
+        android:id="@+id/editNim"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:ems="10"
+        android:hint="NIM"
+        android:inputType="text|number"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"
+        android:textSize="16dp" />
+
+
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#ffff"
+        android:inputType="textPassword"
+        android:layout_below="@id/editNim"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_pass"/>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_below="@id/editPass"
+        android:layout_marginTop="80dp"
+        android:text="login"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <TextView
+        android:layout_below="@id/editPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:id="@+id/txt_lupa"/>
+
+    <TextView
+        android:textColor="#FFEB3B"
+        android:layout_below="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poltek-GT"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@copyright 2020 | Malsi | Teguh | Surya | Politek Gajah Tunggal"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+
+
+</RelativeLayout>

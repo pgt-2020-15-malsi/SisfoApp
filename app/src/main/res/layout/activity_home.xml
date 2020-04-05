@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".Home"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/gthd" />
+
+            <TextView
+                android:id="@+id/wel"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:text="SISTEM INFORMASI
+            Poltek-GT"
+                android:textColor="#FFE609"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                >
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:text="logout"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nama"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="NIM"
+            android:textColor="#BDAFAF"
+            android:id="@+id/nim"
+            android:layout_below="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#C4DFE6"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgProfil"
+                android:layout_width="98dp"
+                android:layout_height="83dp"
+                android:src="@drawable/ic_action_account" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Profile"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#66A5AD"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="83dp"
+                android:src="@drawable/ic_action_tempel"
+                android:id="@+id/imgKHS"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="KHS"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#66A5AD"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgRekap"
+                android:layout_width="78dp"
+                android:layout_height="85dp"
+                android:src="@drawable/ic_action_chart" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Rekap Nilai"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#07575B"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgDosen"
+                android:layout_width="90dp"
+                android:layout_height="82dp"
+                android:src="@drawable/ic_action_mail" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Evaluasi Dosen"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#07575B"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPoin"
+                android:layout_width="89dp"
+                android:layout_height="89dp"
+                android:src="@drawable/ic_action_poin" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Poin"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#003B46"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgKonsul"
+                android:layout_width="77dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_action_konsul" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Konsultasi"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3">
+        <ImageView
+            android:layout_marginLeft="55dp"
+            android:id="@+id/imageView6"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/si" />
+
+    </LinearLayout>
+
+</RelativeLayout>

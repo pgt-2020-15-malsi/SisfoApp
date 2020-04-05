@@ -1,0 +1,2 @@
+rootProject.name='SisfoApp'
+include ':app'
